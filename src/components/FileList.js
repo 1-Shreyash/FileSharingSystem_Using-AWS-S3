@@ -13,7 +13,7 @@ const getFileType = (fileName) => {
 export default function FileList({ files }) {
   return (
     <div>
-      <h2 className="text-xl font-semibold mb-2">Uploaded Files</h2>
+      <h2 className="text-xl font-semibold mb-2">Uploaded Files : </h2>
       <div className="grid grid-cols-3 gap-4">
         {files.map((file) => {
           const fileType = getFileType(file.Key);
